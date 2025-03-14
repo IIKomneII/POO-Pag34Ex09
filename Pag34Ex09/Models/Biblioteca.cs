@@ -12,5 +12,13 @@ public class Biblioteca
         return false;
     }
 
-
+    public bool DevolverLivro(Livro livro)
+    {
+        if (livro.status == false)
+        {
+            livro.status = true;
+            return true;
+        }
+        return false;
+    }
 }
